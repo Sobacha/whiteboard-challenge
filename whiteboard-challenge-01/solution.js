@@ -13,6 +13,6 @@ function maxMinAve(arr){
 
 	return ({max: max,
 		min: min,
-		vae: ave});
+		ave: ave});
 }
 
