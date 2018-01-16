@@ -16,4 +16,3 @@ function maxMinAve(arr){
 		ave: ave});
 }
 
-console.log(maxMinAve([1,2,3,4,5]));
