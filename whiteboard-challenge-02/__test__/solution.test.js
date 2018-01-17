@@ -27,5 +27,11 @@ describe('Solution module', function() {
 			() => {expect(highests([1,2,2])).toEqual({firstHigh: 2, secondHigh: 1})}
 
 		);
+	
+		test(
+			'if array has float numbers, it should work fine.',
+			() => {expect(highests([1.1,2,0.2])).toEqual({firstHigh: 2, secondHigh: 1.1})}
+
+		);
 	});
 });
