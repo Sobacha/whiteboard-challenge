@@ -1,19 +1,22 @@
 'use strict'
 
-function printPassengers(engine){
-	if(!engine.hasOwnProperty('name') || !engine.hasOwnProperty('value') || !engine.hasOwnProperty('next')){
+const traverse = (engine) => {
+	if(!engine.hasOwnProperty('value') || !engine.hasOwnProperty('next')){
 		return null;
 	}
+
 	if(typeof engine !== 'object'){
 		return false;
 	}
 
 	let currentCar = engine;
+	let total = 0;
 
 	while(currentCar){
-		console.log('Passenger in ' + currentCar.name + ': ' + currentCar.value);
+		total += currentCar.value;
 		currentCar = currentCar.next;
 	}
+	return  total;
 }
 
-module.exports = printPassengers;
+module.exports = traverse;
