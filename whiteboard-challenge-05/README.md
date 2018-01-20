@@ -1,6 +1,6 @@
 ## Function findMid 
 
-####Parameters:
+#### Parameters:
 
 * One instance of class SLL (which is singly linked list object)
 
@@ -11,7 +11,7 @@
 
 ## Example
 
-####Parameters:
+#### Parameters:
 
 * sll_object (odd number of nodes) => {25, nxt}->{01, nxt}->{15, nxt}->{33, nxt}->{04, null}
 
@@ -19,7 +19,7 @@
 
 * {15, nxt}
 
-####Parameters:
+#### Parameters:
 
 * sll_object (even number of nodes) => {01, nxt}->{15, nxt}->{33, nxt}->{04, null}
 
