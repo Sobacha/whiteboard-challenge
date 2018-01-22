@@ -90,6 +90,17 @@ class SLL {
 //		console.log('nth node: ' + currentNode.value);
 		return currentNode;
 	}
+
+        findNthNodeFromEnd(n) {
+          // reverse
+          this.reverse();
+          // findNthNode
+          let node = this.findNthNode(n);
+          // reverse it back
+          this.reverse();
+
+          return node;
+        }
 }
 
 module.exports = SLL;
