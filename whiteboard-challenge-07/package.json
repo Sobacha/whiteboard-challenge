@@ -1,0 +1,20 @@
+{
+  "name": "whiteboard-challenge-07",
+  "version": "1.0.0",
+  "description": "Funciton returns true if it is a circular singly linked list. Otherwise returns false.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "Rima",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^4.16.0",
+    "jest": "^22.1.4"
+  }
+}
