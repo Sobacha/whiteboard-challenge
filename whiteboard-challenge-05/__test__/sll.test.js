@@ -40,6 +40,14 @@ describe('Sll module', function(){
 			expect(validSll.head.next).toEqual(new nd(1));
 		});
 
+		test(
+			'should insert head with value array', () => {
+			// create a sll obj
+			let validSll = new sll();
+			validSll.insertHead(['head', 'head']);
+
+			expect(validSll.head).toEqual(new nd(['head', 'head']));
+		});
 	});
 
 	describe('insertEnd function', () => {
@@ -61,6 +69,16 @@ describe('Sll module', function(){
 			validSll.insertEnd(3);
 
 			expect(validSll.head.value).toEqual(1);
+			expect(validSll.head.next).toEqual(new nd(3));
+		});
+		
+                test(
+			'shuold insert to end with value object into existing nodes sll', () => {
+			let validSll = new sll();
+			validSll.insertHead({name: 'head'});
+			validSll.insertEnd(3);
+
+			expect(validSll.head.value).toEqual({name: 'head'});
 			expect(validSll.head.next).toEqual(new nd(3));
 		});
 	});
@@ -100,13 +118,24 @@ describe('Sll module', function(){
 
 			expect(validSll.head.value).toEqual(1);
 		});
+		
+                test(
+			'should reverse empty singly linked list', () => {
+			// create a sll obj
+			let validSll = new sll();
+
+			// reverse
+			validSll.reverse();
+
+			expect(validSll.head).toEqual(null);
+		});
 	});
 		
 	describe('remove function', function(){
 		describe('valid input', function(){
 
 			test(
-				'should remove Nth node if an instance os class Sll has multiple nodes', () => {
+				'should remove Nth node if an instance of class Sll has multiple nodes', () => {
 				// create a sll obj
 				let validSll = new sll();
 				validSll.insertHead(1);
@@ -195,7 +224,7 @@ describe('Sll module', function(){
 		describe('valid input', function(){
 
 			test(
-				'should return Nth node if an instance os class Sll has multiple nodes', () => {
+				'should return Nth node if an instance of class Sll has multiple nodes', () => {
 				// create a sll obj
 				let validSll = new sll();
 				validSll.insertHead(1);
@@ -250,6 +279,71 @@ describe('Sll module', function(){
 			test(
 				'should return null if N is more than length of sll', () => {
 				expect(validSll.findNthNode(11)).toEqual(null);
+			});
+		});
+	});
+
+	describe('findNthNodeFromEnd function', function(){
+		describe('valid input', function(){
+
+			test(
+				'should return Nth node from tails node if an instance of class Sll has multiple nodes', () => {
+				// create a sll obj
+				let validSll = new sll();
+				validSll.insertHead(1);
+				// insert node in end os all
+				for(let i = 2; i < 11; i++){
+					validSll.insertEnd(i);
+				}
+				
+				expect(validSll.findNthNodeFromEnd(7).value).toEqual(4);
+                                // make sure it reversed back to the original order
+                                expect(validSll.head.value).toBe(1);
+			});
+
+			test(
+				'should return null if an instance of class Sll is empty (head is null)', () => {
+				let emptySll = new sll();
+				expect(emptySll.findNthNodeFromEnd(9)).toEqual(null);
+			});
+
+			test(
+				'should return head if an instance of class Sll has only head and 1 is passed', () => {
+				// create a sll obj
+				let headOnlySll = new sll();
+				headOnlySll.insertHead(1);
+				expect(headOnlySll.findNthNodeFromEnd(1).value).toEqual(1);
+			});
+		});
+	
+		describe('invalid input', function(){
+
+			// create a sll obj
+			let validSll = new sll();
+			validSll.insertHead(1);
+			// insert node in end os all
+			for(let i = 2; i < 11; i++){
+				validSll.insertEnd(i);
+			}
+
+			test(
+				'should return null if N is not number', () => {	
+				expect(validSll.findNthNodeFromEnd('')).toBe(null);
+			});
+
+			test(
+				'should return null if N is 0', () => {
+				expect(validSll.findNthNodeFromEnd(0)).toEqual(null);
+			});
+
+			test(
+				'should return null if N is negative', () => {
+				expect(validSll.findNthNodeFromEnd(-1)).toEqual(null);
+			});
+			
+			test(
+				'should return null if N is more than length of sll', () => {
+				expect(validSll.findNthNodeFromEnd(11)).toEqual(null);
 			});
 		});
 	});
