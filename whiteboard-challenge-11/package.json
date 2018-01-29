@@ -1,0 +1,22 @@
+{
+  "name": "whiteboard-challenge-11",
+  "version": "1.0.0",
+  "description": "This is an assignment for cf-401",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "jest": "^22.1.4"
+  },
+  "scripts": {
+    "test": "jest --verbose -i",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "Rima",
+  "license": "ISC"
+}
