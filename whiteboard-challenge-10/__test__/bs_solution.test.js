@@ -19,7 +19,7 @@ describe('bs_solution module', () => {
         });
       test(
         'should return correct answer when n exists in arr with duplicate value', () => {
-          expect(BS(2, [1,2,2,3,4,5])).toEqual('{value: 2, index: 1}');
+          expect(BS(2, [1,2,2,3,4,5])).toEqual('{value: 2, index: 2}');
         });
     });
 
