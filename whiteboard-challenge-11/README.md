@@ -14,7 +14,7 @@
 
 #### Parameters:
 
-* checkBraces([1,2,3,5]);
+* calculateMissing([1,2,3,5]);
 
 #### Return value
 
@@ -22,7 +22,7 @@
 
 #### Parameters:
 
-* checkBraces([1,2,3,4]);
+* calculateMissing([1,2,3,4]);
 
 #### Return value
 
