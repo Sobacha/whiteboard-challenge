@@ -1,14 +1,14 @@
 {
-  "name": "whiteboard-challenge-12",
+  "name": "whiteboard-challenge-13",
   "version": "1.0.0",
-  "description": "This is an assignment for cf-401",
+  "description": "dedupe function that remove duplicates value in linked list",
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
     "lint": "eslint ."
   },
   "keywords": [],
-  "author": "Rima",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^4.16.0",
