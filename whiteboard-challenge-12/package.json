@@ -8,7 +8,7 @@
     "lint": "eslint ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Rima",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^4.16.0",
