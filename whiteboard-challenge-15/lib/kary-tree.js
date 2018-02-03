@@ -75,24 +75,4 @@ const karyTree = module.exports = class {
 
     return this;
   }
-
-
-  // look for the very bottom leaf
-  findBottomNodes() {
-    if(this.root.val === null){
-      return null;
-    }
-
-    let currentTN = this.root;
-    let resArr = [];
- 
-    this.breadthFirst(currentTN => {
-      if(currentTN.children.length === 0 && currentTN.val !== null) {
-        resArr.push(currentTN);
-      }
-    });
-
-    return resArr;
-  }
-
 }
