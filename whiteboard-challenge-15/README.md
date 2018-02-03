@@ -15,11 +15,7 @@ Array consists of tree nodes that are leaves in k-ary tree
 
 #### Parameters:
 
-   1
-  /|\
- 2 3 4
-   |
-   5
+{root: {value: 1, children: [{value: 2, children: []}, {value: 3, children:{value: 5, children: []}}, {value: 4, children: []}]}
 
 findBottomNodes(tree)
 
