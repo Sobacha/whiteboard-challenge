@@ -1,0 +1,21 @@
+{
+  "name": "whiteboard-challenge-18",
+  "version": "1.0.0",
+  "description": "Returns a node that has a max num of children",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "eslint": "^4.17.0",
+    "jest": "^22.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose -i",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
