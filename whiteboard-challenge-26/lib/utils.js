@@ -3,6 +3,7 @@
 
 
 Array.prototype.map = function(f){
+  console.log('using map in utils.js');
   let resArr = [];
   for(let i = 0; i < this.length; i++){
     resArr.push(f(this[i]));
@@ -11,6 +12,7 @@ Array.prototype.map = function(f){
 }
 
 Array.prototype.filter = function(f){
+  console.log('using filter in utils.js');
   let resArr = [];
   for(let i = 0; i < this.length; i++){
     if(f(this[i])){
@@ -21,7 +23,7 @@ Array.prototype.filter = function(f){
 }
 
 Array.prototype.reduce = function(f, initialValue){
-
+  console.log('using reduce in utils.js');
   let accum, currentIdx;
   if(initialValue){
     currentIdx = 0;

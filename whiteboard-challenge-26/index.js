@@ -1,9 +1,6 @@
 'use strict';
 
-const methods = require('./lib/utils');
-const map = methods.map;
-const filter = methods.filter;
-const reduce = methods.reduce;
+const utils = require('./lib/utils');
 
 // map
 const arr1 = [1, 4, 9, 16];
