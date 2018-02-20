@@ -1,6 +1,6 @@
 'use strict';
 
-//const utils = require('./lib/utils');
+const utils = require('./lib/utils'); // eslint-disable-line no-unused-vars
 
 // map
 const arr1 = [1, 4, 9, 16];
