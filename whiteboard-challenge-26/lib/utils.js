@@ -9,7 +9,7 @@ Array.prototype.map = function(f){
     resArr.push(f(this[i]));
   }
   return resArr;
-}
+};
 
 Array.prototype.filter = function(f){
   console.log('using filter in utils.js');
@@ -20,7 +20,7 @@ Array.prototype.filter = function(f){
     }
   }
   return resArr;
-}
+};
 
 Array.prototype.reduce = function(f, initialValue){
   console.log('using reduce in utils.js');
@@ -42,4 +42,4 @@ Array.prototype.reduce = function(f, initialValue){
   }
 
   return accum;
-}
+};
