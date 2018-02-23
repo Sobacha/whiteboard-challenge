@@ -1,0 +1,20 @@
+{
+  "name": "whiteboard-challenge-27",
+  "version": "1.0.0",
+  "description": "rotate a doubled array 90 degrees in clockwise",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "eslint": "^4.18.0",
+    "jest": "^22.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
