@@ -1,0 +1,21 @@
+{
+  "name": "whiteboard-challenge-31",
+  "version": "1.0.0",
+  "description": "find intersects between two arrays",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "eslint": "^4.15.0",
+    "jest": "^22.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
