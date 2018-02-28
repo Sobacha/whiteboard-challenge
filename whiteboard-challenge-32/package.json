@@ -1,0 +1,21 @@
+{
+  "name": "whiteboard-challenge-32",
+  "version": "1.0.0",
+  "description": "Fibonacchi iteration and recursion",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "eslint": "^4.15.0",
+    "jest": "^22.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
