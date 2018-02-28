@@ -1,6 +1,6 @@
-## Function to fing nth value in fibonacchi
-* Iteration: iter()
-* Recursion: recur()
+## Function to find nth value in fibonacchi
+* Iteration: iter(n)
+* Recursion: recur(n)
 
 #### Input
 * Valid: number(not float) > 0
