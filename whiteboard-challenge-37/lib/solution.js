@@ -9,6 +9,9 @@ function btToSortedSll(bt){
   if(!(bt instanceof BT)){
     throw new Error('Input is not instaceof Binary Tree');
   }
+  if(bt.root === null){
+    return new SLL();
+  }
 
   let valArr = bt.preOrderTraversal();
   let bst = new BST();
