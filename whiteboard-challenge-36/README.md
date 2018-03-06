@@ -7,5 +7,4 @@
 * Otherwise false
 ##### Error
 * If input is not instanceof binary search tree, throws an error
-##### Example
 
