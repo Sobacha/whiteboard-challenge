@@ -4,7 +4,6 @@ const isSameBST = require('../lib/solution');
 const BST = require('../lib/bst');
 const TreeNode = require('../lib/tree-node');
 
-
 describe('isSameBST', () => {
 
   describe('isSameBST function', () => {

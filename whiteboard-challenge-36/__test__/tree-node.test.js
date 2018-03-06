@@ -2,7 +2,6 @@
 
 const TreeNode = require('../lib/tree-node');
 
-
 describe('TreeNode', () => {
 
   describe('TreeNode constructor', () => {

@@ -2,7 +2,6 @@
 
 const BST = require('./bst');
 
-
 function isSameBST(bst1, bst2){
   if(!(bst1 instanceof BST) || !(bst2 instanceof BST)){
     throw new Error('Invalid input');

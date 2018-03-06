@@ -3,7 +3,6 @@
 const TreeNode = require('../lib/tree-node');
 const BST = require('../lib/bst');
 
-
 describe('BST', () => {
   
   describe('BST constructor', () => {

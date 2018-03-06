@@ -2,7 +2,6 @@
 
 const TreeNode = require('./tree-node');
 
-
 class BST{
   constructor(root = null){
     this.root = root;
