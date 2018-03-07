@@ -5,7 +5,7 @@ const BT = require('./bt');
 const BST = require('./bst');
 const SLL = require('./sll');
 
-// O(n) where n is the number of nodes in input argument 'bt'
+// O(NlogN) where n is the number of nodes in input argument 'bt'
 function btToSortedSll(bt){
   if(!(bt instanceof BT)){
     throw new Error('Input is not instaceof Binary Tree');
